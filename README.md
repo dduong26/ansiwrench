@@ -1,2 +1,2 @@
 # ansiwrench
-Ansible configuration bot for my laptops/workstations
+Ansible configuration for my laptops/workstations

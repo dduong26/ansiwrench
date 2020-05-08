@@ -1,0 +1,17 @@
+- name: Update and upgrade system using pacman
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install git
+  pacman:
+    name:
+      - git
+      - docker.io
+
+- name: Create my user
+  user:
+    name: scipio
+    create_home: True
+    shell: /bin/bash
+    groups: docker,sudo 
